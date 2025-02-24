@@ -8,7 +8,8 @@ console.log(enterKm);
 if (myAge>18 && myAge<65){
     const priceKm = (0.21);
     const tottPrice = priceKm * enterKm;
-    console.log(tottPrice);
+    const formattedPriceNormal = tottPrice.toFixed(2); 
+    console.log(formattedPriceNormal);
 // altrimenti se l'utente e minorenne applicare uno sconto del 20%
 }else if (myAge<18) {
     const priceKm = (0.21);
@@ -16,7 +17,8 @@ if (myAge>18 && myAge<65){
     const twentypercent = 20;
     const percentageKm = ((twentypercent / 100) * tottPrice);
     const priceDiscountMinor = tottPrice - percentageKm;
-    console.log(priceDiscountMinor);
+    const formattedPriceMinor = priceDiscountMinor.toFixed(2)
+    console.log(formattedPriceMinor);
 // altrimenti se l' utente e un over 65 applicare uno sconto del 40%  
 }else if (myAge>65){
     const priceKm = (0.21);
@@ -24,5 +26,6 @@ if (myAge>18 && myAge<65){
     const fortyPercent = 40;
     const fortyPercentKm = ((fortyPercent / 100) * tottPrice);
     const priceDiscountOver = tottPrice - fortyPercentKm;
-    console.log(priceDiscountOver);
+    const formattedPriceOver = priceDiscountOver.toFixed(2)
+    console.log(formattedPriceOver);
 } 
