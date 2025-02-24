@@ -8,3 +8,12 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio,
 - va applicato uno sconto del 40% per gli over 65
 - L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
+### soluzione problema 
+- chiedere il nome utente 
+- chiedere quanti chilometri deve fare 
+- calcolare il prezzo del biglietto in base ai km
+- applicare uno sconto: 
+    - se l'utente e minorenne applicare uno sconto del 20%
+    - altrimenti se l' utente e un over 65 applicare uno sconto del 40%
+    - altrimenti non sarà applicato nessuno sconto
+- una volta calcolato il prezzo esporlo con massimo due decimali 
